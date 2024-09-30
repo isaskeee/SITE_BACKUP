@@ -1,0 +1,448 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 0%;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.imagem{
+    background-image: url(../imagens/HEADERBG.jpg);
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    width: 100%; /*largura */
+    height: 550px; /*altura */
+    border-bottom: #f3db7d solid 3px;
+}
+
+/*NAV BAR DO HEADER*/
+.overlay {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semitransparente */
+    color: white; /* Cor do texto */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    font-family: 'Arial', sans-serif; /* Altera a fonte */
+    transition: color 0.3s ease; /* Suaviza a transição de cor */
+}
+
+nav ul li a:hover {
+    color: #f3db7d; /* Altera a cor ao passar o mouse */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Adiciona uma sombra ao texto */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent; /* Cor inicial do botão */
+    border: 2px solid white; /* Borda do botão */
+    border-radius: 5px; /* Cantos arredondados */
+    transition: all 0.3s ease; /* Efeito de transição */
+}
+
+.button:hover {
+    transform: scale(1.1); /* Efeito de zoom */
+    background-color: white; /* Cor de fundo ao passar o mouse */
+    color: black; /* Cor do texto ao passar o mouse */
+}
+
+.logo {
+    margin-left: 10px; /* Espaço entre o menu e a logo */
+    margin-top: 5px;
+}
+
+.logo-image {
+    height: 80px; /* Ajuste a altura da logo conforme necessário */
+    width: 90px;
+}
+
+.text-image {
+    position: absolute; /* Posiciona a imagem de texto em relação ao overlay */
+    left: 50%; /* Centraliza horizontalmente */
+    top: 50%; /* Centraliza verticalmente */
+    margin-top: 230px;
+    transform: translate(-50%, -50%); /* Ajusta a posição para ficar exatamente no centro */
+}
+
+.text-image-content {
+    max-width: 100%; /* Limita a largura da imagem de texto */
+    height: 100px; /* Mantém a proporção */
+}
+
+
+.containerFLA{
+    position: relative;
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-between; /* Espaça os itens para os extremos */
+    align-items: center; /* Alinha verticalmente no centro */
+    width: 100%;
+    height: 600px;
+    padding: 20px; /* Adiciona algum espaço ao redor do contêiner */
+    box-sizing: border-box; /* Inclui padding na largura e altura total */
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.container_doisFLA{
+    position: relative;
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-between; /* Espaça os itens para os extremos */
+    align-items: center; /* Alinha verticalmente no centro */
+    width: 100%;
+    height: 600px;
+    padding: 20px; /* Adiciona algum espaço ao redor do contêiner */
+    box-sizing: border-box; /* Inclui padding na largura e altura total */
+    margin-top: 100px;
+    margin-bottom: 200px;
+    overflow: hidden;
+}
+
+.container_texto_umFLA{
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+    padding-top: 200px;
+}
+
+.container_imagem_umFLA{
+    height: 575px;
+    width: 706px;
+    background-image: url(../imagens/splash.png);
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    background-size: cover;
+
+}
+
+
+.container_fundo_umFLA{
+    height: 300px;
+    width: 380px;
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    padding-left: 150px;
+    padding-top: 100px;
+
+}
+
+.imagem_homeFLA{
+    background-image: url(../imagens/imagem_home.jpeg);
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    width: 100%; /*largura */
+    height: 350px; /*altura */
+    border-radius: 10px;
+}
+
+
+
+.container_texto_doisFLA{
+    height: 700px;
+    width: 500px;
+    margin: 20px;
+    padding-top: 180px;
+}
+
+.container_imagem_doisFLA{
+    height: 575px;
+    width: 656px;
+    background-image: url(../imagens/splashazul.png);
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    background-size: cover;
+
+}
+
+
+.container_fundo_doisFLA{
+    height: 300px;
+    width: 380px;
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    padding-left: 150px;
+    padding-top: 40px;
+
+}
+
+.imagem_home_doisFLA{
+    background-image: url(../imagens/hotel_pool.jpg);
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    width: 100%; /*largura */
+    height: 450px; /*altura */
+    border-radius: 10px;
+}
+
+
+
+.container_texto_tresFLA{
+    height: 600px;
+    width: 500px;
+    margin: 20px;
+    padding-top: 200px;
+}
+
+.container_imagem_tresFLA{
+    position: absolute;
+    height: 295px;
+    width: 296px;
+    border-radius: 15px;
+    background-image: url(../imagens/gato_ferias.jpeg);
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    background-size: cover;
+    margin-left: 50%;
+    margin-top: 10%;
+    z-index: 1;
+}
+
+
+.imagem_home_tresFLA{
+    position: relative;
+    background-image: url(../imagens/cachorroferias.jpeg);
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    width: 600px; /*largura */
+    height: 280px; /*altura */
+    border-radius: 10px;
+    margin-right: 2%;
+    margin-left: 0%;
+    z-index: 0;
+}
+
+.imagem_home_quatroFLA{
+    position: absolute;
+    background-image: url(../imagens/cachorro_ferias_dois.jpeg);
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    width: 450px; /*largura */
+    height: 220px; /*altura */
+    border-radius: 10px;
+    margin-left: 65%;
+    margin-top: 25%;
+    z-index: 0;
+}
+
+
+.quartoFLA {
+    background-image: url(../imagens/quarto_hotel.JPEG);
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed;
+    height: 600px;
+    width: 100%;
+    margin-bottom: 200px;
+    position: relative; /* Necessário para o posicionamento absoluto do card */
+}
+.info {
+    display: none; /* Inicialmente escondido */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo preto semitransparente */
+    padding: 20px;
+    color: #fff; /* Texto branco */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute; /* Para sobrepor à imagem */
+    top: 50%; /* Centraliza verticalmente */
+    left: 5%; /* Move mais para a esquerda */
+    width: 300px; /* Largura fixa do card */
+    height: auto; /* Ajusta a altura automaticamente */
+    transform: translate(-100%, -50%); /* Começa fora da tela à esquerda */
+    display: flex; /* Usar flexbox para organizar o texto */
+    flex-direction: column; /* Coloca os elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente o conteúdo */
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    text-align: center; /* Centraliza o texto */
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+    opacity: 0; /* Inicialmente invisível */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transição suave para posição e opacidade */
+}
+
+.visible {
+    display: flex; /* Mostra o card como flexbox quando visível */
+    transform: translate(0, -50%); /* Move para sua posição original */
+    opacity: 1; /* Torna visível */
+}
+
+p{
+   
+font-size: 18px;
+line-height: 1.8;
+color: #555;
+margin-bottom: 20px;
+text-align: justify;
+max-width: 800px;
+margin-left: auto;
+margin-right: auto;
+padding: 10px;
+
+}
+
+.hospedesFLA{
+    font-size: 30px;
+    line-height: 1.8;
+    color: #0a0a0a;
+    margin-bottom: 20px;
+    text-align: justify;
+    margin-left: 100px;
+}
+
+.avaliacao-tabelaFLA {
+    width: 85%; /* Ocupará toda a largura disponível */
+    height: 800px;
+    margin-bottom: 40px; /* Margem na div em relação ao footer */
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.avaliacao-tabelaFLA td {
+    padding: 25px;
+    border: 1px solid #e0e0e0; /* Adiciona bordas visíveis */
+    text-align: center;
+}
+
+.avaliacao-tabelaFLA td:last-child {
+    text-align: center;
+}
+
+.texto-loremFLA {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    height: 100px;
+    
+}
+
+.estrelaFLA {
+    margin: 0 2px;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-size: 30px;
+    color: #ffcc00; /* Cor das estrelas */
+}
+
+.estrelasFLA:hover {
+    color: #ff9900;
+}
+
+.avaliacao-tabelaFLA tr:last-child td {
+    border-bottom: none;
+}
+
+#footer {
+    width: 100%;
+    height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    background: linear-gradient(to top, #000000, #1a1919);
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    padding: 20px; /* Adiciona algum espaçamento interno */
+    box-sizing: border-box; /* Inclui padding na largura e altura total */
+}
+
+.icons-container {
+    display: flex;
+    gap: 20px; /* Espaço entre os ícones */
+}
+
+.icon {
+    display: flex;
+    flex-direction: column; /* Coloca o texto abaixo do ícone */
+    align-items: center; /* Centraliza o texto abaixo do ícone */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+}
+
+.icon img {
+    margin-bottom: 5px; /* Espaço entre o ícone e o texto */
+}
+
+.icon:hover {
+    transform: scale(1.3); /* Aumenta o ícone ao passar o mouse */
+    background-color: transparent;
+    border-radius: 50%; /* Mantém ícone redondo ao hover */
+    padding: 5px; /* Espaço interno ao hover */
+}
+
+.footer-text {
+    margin-top: 20px; /* Espaço entre os ícones e o texto do rodapé */
+    color: white; /* Cor do texto do rodapé */
+}
