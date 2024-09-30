@@ -407,11 +407,246 @@ padding: 10px;
     border-bottom: none;
 }
 
+
+/*________PARTE DO ISAQUE_____________ */
+
+  /* Área Kids */
+
+.backtituloisa {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 0;
+    margin-top: 100px;
+    width: 1490px; /* Largura da área */
+    height: 200px; /* Altura da área */
+}
+
+.tituloprincisa {
+    padding: 1em;
+}
+
+.backintroisa {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 0;
+    margin-top: 100px;
+}
+
+.introisa {
+    padding: 1em;
+}
+
+.backgroundslideisa {
+    height: 573px;
+    
+}
+
+.galeriaisa{
+    padding: 6em;
+}
+
+/* Slideshow */
+.slideshow-containerisa {
+  width: 80%;
+  position: relative;
+  margin: 5%;
+}
+
+/* Botões de próximo e anterior */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Posição do botão "próximo" */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Background escuro */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Legenda */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Texto (1/3) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Indicadores */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Animação */
+.fadeisa {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Tamanho do texto otimizado em telas menores */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+                                            /* Área da hospedagem pet */
+
+
+.pettituloisa {
+    padding: 4em;
+}
+
+.titulopetisa {
+    font-size: 24px;
+    padding: 1em;
+}
+
+.petparagrafosisa {
+    padding: 1em;
+    width: 100%; /* Largura da área */
+    height: 400px; /* Altura da área */
+    margin-bottom: 50px;
+}
+
+.petisa {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 0;
+    margin-top: 100px;
+}
+
+.galeriapetisa {
+    font-size: 24px;
+    margin-bottom: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* Segundo slideshow */
+
+*{
+    box-sizing: border-box;
+}
+  
+  /* The grid: Four equal columns that floats next to each other */
+  body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* O contêiner para evitar overflow */
+.containerisas {
+    overflow: hidden; /* Impede rolagem lateral */
+}
+
+/* O grid: quatro colunas iguais que flutuam uma ao lado da outra */
+.columnisas {
+    float: left;
+    width: 25%; /* Mantém 25% da largura */
+    padding: 10px; /* Padding para espaçamento */
+    box-sizing: border-box; /* Certifica-se de que o padding está incluído na largura */
+}
+
+/* Estilo das imagens dentro do grid */
+.columnisas img {
+    opacity: 0.8; 
+    cursor: pointer; 
+    height: 200px;
+    width: 100%; /* Faz a imagem ocupar 100% da coluna */
+}
+
+  
+  .columnisas img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .rowisas:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container */
+  .containerisas {
+    position: relative;
+    display: block;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the expanded image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+
+
+/*       RODAPÉ DA PAGINA         */
+
 #footer {
     width: 100%;
     height: auto; /* Permite que a altura se ajuste ao conteúdo */
     background: linear-gradient(to top, #000000, #1a1919);
     display: flex;
+    margin-top: 100px;
     flex-direction: column; /* Alinha o conteúdo em coluna */
     align-items: center; /* Centraliza horizontalmente */
     padding: 20px; /* Adiciona algum espaçamento interno */
