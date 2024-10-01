@@ -12,78 +12,75 @@
         
 /*________PARTE DO ISAQUE_____________ */
 
-  /* Área Kids */
-
 .backtituloisa {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    border-radius: 0;
-    margin-top: 100px;
-    width: 1490px; /* Largura da área */
-    height: 200px; /* Altura da área */
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 0;
+  margin-top: 100px;
+  width: 100%; 
+  height: auto; 
 }
 
 .tituloprincisa {
-    padding: 1em;
+  padding: 1em;
 }
 
 .backintroisa {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    border-radius: 0;
-    margin-top: 100px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 0;
+  margin-top: 100px;
 }
 
 .introisa {
-    padding: 1em;
+  padding: 1em;
 }
 
 .backgroundslideisa {
-    height: 573px;
-    
+  height: auto;
 }
 
-.galeriaisa{
-    padding: 6em;
+.galeriaisa {
+  padding: 2em;
 }
 
-/* Slideshow */
+
 .slideshow-containerisa {
   width: 80%;
   position: relative;
-  margin: 5%;
+  margin: auto;
 }
 
-/* Botões de próximo e anterior */
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
   padding: 16px;
-  margin-top: -22px;
   color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
   user-select: none;
 }
 
-/* Posição do botão "próximo" */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+
+.prev {
+  left: 0;
 }
 
-/* Background escuro */
+.next {
+  right: 0;
+}
+
+
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Legenda */
+
 .text {
-  color: #f2f2f2;
+  color: #000;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -92,16 +89,16 @@
   text-align: center;
 }
 
-/* Texto (1/3) */
+
 .numbertext {
-  color: #f2f2f2;
+  color: #000;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
 }
 
-/* Indicadores */
+
 .dot {
   cursor: pointer;
   height: 15px;
@@ -117,380 +114,387 @@
   background-color: #717171;
 }
 
-/* Animação */
+
 .fadeisa {
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
 
-/* Tamanho do texto otimizado em telas menores */
+
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+  .prev, .next, .text {font-size: 11px;}
 }
 
-
-
-                                            /* Área da hospedagem pet */
-
+/* Área da hospedagem pet */
 
 .pettituloisa {
-    padding: 4em;
+  padding: 4em;
 }
 
 .titulopetisa {
-    font-size: 24px;
-    padding: 1em;
+  font-size: 24px;
+  padding: 1em;
 }
 
 .petparagrafosisa {
-    padding: 1em;
-    width: 100%; /* Largura da área */
-    height: 400px; /* Altura da área */
-    margin-bottom: 50px;
+  padding: 1em;
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
 }
 
 .petisa {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    border-radius: 0;
-    margin-top: 100px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 0;
+  margin-top: 100px;
 }
 
 .galeriapetisa {
-    font-size: 24px;
-    margin-bottom: 50px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  margin-bottom: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
-/* Segundo slideshow */
-
-*{
-    box-sizing: border-box;
-}
-  
-  /* The grid: Four equal columns that floats next to each other */
-  body {
-    margin: 0;
-    font-family: Arial;
+* {
+  box-sizing: border-box;
 }
 
-/* O contêiner para evitar overflow */
+p{
+  font-family: 'Arial', sans-serif; /* Você pode escolher outra fonte se preferir */
+    font-size: 18px; /* Tamanho médio */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    color: #333; /* Cor do texto */
+    text-align: justify; /* Texto justificado */
+    text-align: center;
+    margin: 20px 15px; /* Aumenta a margem lateral */
+    padding: 0 25px; /* Adiciona espaçamento interno lateral */
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em; /* Tamanho maior */
+    line-height: 1.2; /* Espaçamento entre linhas */
+    color: #1a1a1a; /* Cor do texto */
+    margin: 20px 0; /* Margem vertical */
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2em; /* Tamanho menor que h1 */
+    line-height: 1.3; 
+    color: #333; 
+    margin: 18px 0; 
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.75em; /* Tamanho menor que h2 */
+    line-height: 1.4; 
+    color: #444; 
+    margin: 16px 0; 
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5em; /* Tamanho menor que h3 */
+    line-height: 1.5; 
+    color: #555; 
+    margin: 14px 0; 
+    text-align: center;
+}
+
+h5 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.25em; /* Tamanho menor que h4 */
+    line-height: 1.6; 
+    color: #666; 
+    margin: 12px 0; 
+    text-align: center;
+}
+
 .containerisas {
-    overflow: hidden; /* Impede rolagem lateral */
+  position: relative;
+  display: none;
 }
 
-/* O grid: quatro colunas iguais que flutuam uma ao lado da outra */
 .columnisas {
-    float: left;
-    width: 25%; /* Mantém 25% da largura */
-    padding: 10px; /* Padding para espaçamento */
-    box-sizing: border-box; /* Certifica-se de que o padding está incluído na largura */
+  float: left;
+  width: 25%;
+  padding: 10px;
 }
 
-/* Estilo das imagens dentro do grid */
 .columnisas img {
-    opacity: 0.8; 
-    cursor: pointer; 
-    height: 200px;
-    width: 100%; /* Faz a imagem ocupar 100% da coluna */
+  opacity: 0.8; 
+  cursor: pointer; 
+  width: 100%;
+  height: 200px;
 }
 
-  
-  .columnisas img:hover {
-    opacity: 1;
-  }
-  
-  /* Clear floats after the columns */
-  .rowisas:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* The expanding image container */
-  .containerisas {
-    position: relative;
-    display: block;
-  }
-  
-  /* Expanding image text */
-  #imgtext {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: white;
-    font-size: 20px;
-  }
-  
-  /* Closable button inside the expanded image */
-  .closebtn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
-  }
+.columnisas img:hover {
+  opacity: 1;
+}
+
+.rowisas::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.containerisas {
+  position: relative;
+  display: none;
+}
+
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
 
     </style>
    
 </head>
     <body>
 
-        <header>
-            <!--Criação das primeiras divs-->
-
-            <div class="imagem">
+      <header>
+        <!--Criação das primeiras divs-->
+        <div class="imagem"></div>
+        <div class="overlay">
+            <div class="logo">
+                <img src="../imagens/LOGO_preta.png" alt="Logo" class="logo-image">
             </div>
-            <div class="overlay">
-                <div class="logo">
-                    <img src="../imagens/LOGO_preta.png" alt="Logo" class="logo-image">
-                </div>
-            
-                <nav>
-                    <ul>
-                        <li><a href="#promocoes">Promoções</a></li>
-                        <li><a href="../html/pontoTuristico.html">Pontos Turísticos</a></li>
-                        <li><a href="../html/area_recreativa.html">Area Recreativa</a></li>
-                        <li><a href="#pontos-turisticos">Acomodações</a></li>
-                        <li><a href="#fale-conosco" class="button">Fale Conosco</a></li>
-                    </ul>
-                </nav>
-                <div class="text-image">
-                    <img src="../imagens/escrita_logo.PNG" alt="Texto" class="text-image-content">
-                </div>
+            <nav>
+                <ul>
+                  <li><a href="../html/index.html">HOME</a></li>
+                    <li><a href="#promocoes">Promoções</a></li>
+                    <li><a href="../html/pontoTuristico.html">Pontos Turísticos</a></li>
+                    <li><a href="../html/area_recreativa.html">Área Recreativa</a></li>
+                    <li><a href="#pontos-turisticos">Acomodações</a></li>
+                    <li><a href="#fale-conosco" class="button">Fale Conosco</a></li>
+                </ul>
+            </nav>
+            <div class="text-image">
+                <img src="../imagens/escrita_logo.PNG" alt="Texto" class="text-image-content">
             </div>
-        
-        </header>
+        </div>
+    </header>
     
+    <div class="container_imagem_um">
+        <div class="container_fundo_um">
+            <div class="imagem_home"></div>
         </div>
-            <div class="container_imagem_um">
-                <div class="container_fundo_um">
-                <div class="imagem_home">
-                </div>   
-            </div>
-        </div>
-        </div>
-
-        <!--Títulos Iniciais-->
-
-        <div class="backtituloisa">
-            <div class="tituloprincisa">
-    <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
-     sans-serif; text-align: center;">Área Recreativa Infantil</h1>
-     </div>
-    <p style="text-align: center;">Venha conhecer mais sobre nossa área recreativa kids feita exclusivamente para nossos clientes 
-    trazerem suas crianças para se divertirem. 
     </div>
     
-    </p>
+    <!--Títulos Iniciais-->
+    <div class="backtituloisa">
+        <div class="tituloprincisa">
+            <h1>🎈Área Recreativa Infantil🎈</h1>
+        </div>
+        <p>No hotel Vista Serena, sabemos o quanto é importante para os pais ter um espaço seguro e divertido para seus filhos. Nossa área recreativa Kids foi projetada com muito carinho, oferecendo diversas atividades que vão encantar a garotada. Com equipamentos de última geração, brinquedos interativos e monitores qualificados, garantimos que suas crianças terão momentos de pura alegria e diversão.
 
-    <!--Aqui é onde começa a introdução do espaço kids oferecido no hotel, onde é dada uma breve
-     descrição inicial-->
-
- 
-        <div class="backintroisa"> 
+          As crianças poderão explorar um parque temático repleto de escorregadores, piscinas de bolinhas e áreas para jogos. Além disso, oferecemos oficinas de arte, contação de histórias e atividades esportivas, promovendo a socialização e o aprendizado de forma lúdica.
+          
+          Enquanto seus pequenos se divertem, você pode relaxar à beira da piscina ou desfrutar de um dos nossos tratamentos no spa. O Vista Serena foi pensado para atender a toda a família, garantindo que cada membro tenha uma experiência inesquecível.</p>
+    </div>
+    
+    <!-- Introdução ao espaço kids -->
+    <div class="backintroisa"> 
         <div class="introisa">
-        <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
-        sans-serif;text-align: center;  ">Introdução.</h2>
+            <h2>Introdução.</h2>
         </div>
-        <p style="text-align: center;" >Bem-vindos à nossa <strong>Área Recreativa Infantil!</strong> Pensada para garantir momentos de diversão e segurança, 
-        nosso espaço é ideal para crianças de todas as idades.
+        <p>
+            Bem-vindos à nossa <strong>Área Recreativa Infantil!</strong> Pensada para garantir momentos de diversão e segurança, 
+            nosso espaço é ideal para crianças de todas as idades.
         </p>
-        <p style="text-align: center;" >
-        Com uma variedade de brinquedos, jogos interativos e atividades ao ar livre, 
-        aqui as crianças podem <em>explorar, aprender e se divertir em um ambiente acolhedor e supervisionado.</em>
+        <p>
+            Com uma variedade de brinquedos, jogos interativos e atividades ao ar livre, 
+            aqui as crianças podem <em>explorar, aprender e se divertir em um ambiente acolhedor e supervisionado.</em>
         </p>
-        <p style="text-align: center;"  >
-        A diversão está garantida para os pequenos, enquanto os 
-        pais relaxam com tranquilidade!
-        </p> <br> 
-       </div>
-
-       <!--É anunciado abaixo a galeria de fotos da área kids-->
-
-
-       <div class="galeriaisa">
-        <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
-        sans-serif;text-align: center";  >Confira abaixo a galeria de fotos da nossa Área Kids.</h2>
-
-
-        <!--Criação do slideshow-->
+        <p>
+            A diversão está garantida para os pequenos, enquanto os 
+            pais relaxam com tranquilidade!
+        </p>
     </div>
-
+    
+    <!-- Galeria de fotos -->
+    <div class="galeriaisa">
+        <h2>Confira abaixo a galeria de fotos da nossa Área Kids.</h2>
+    </div>
+    
+    <!--Criação do slideshow-->
     <div class="backgroundslideisa">
-      <div class="slideshow-containerisa">
-  
-          <div class="mySlides fadeisa">
-              <div class="numbertext">1 / 4</div>
-              <img src="../imagens/37.jpg" style="width: 100%">
-              <div class="text" style="color: black;">Foto Demonstrativa do interior da nossa Área Kids</div>
-          </div>
-  
-          <div class="mySlides fadeisa">
-              <div class="numbertext">2 / 4</div>
-              <img src="../imagens/38.jpg" style="width: 100%">
-              <div class="text" style="color: black;">Foto da visão geral dos brinquedos que a Área possui</div>
-          </div>
-  
-          <div class="mySlides fadeisa">
-              <div class="numbertext">3 / 4</div>
-              <img src="../imagens/36.jpg" style="width: 100%">
-              <div class="text" style="color: black;">Foto destacada dos brinquedos da Área</div>
-          </div>
-  
-          <div class="mySlides fadeisa">
-              <div class="numbertext">4 / 4</div>
-              <img src="../imagens/wp-1618880391322-1024x683.jpg" style="width: 100%;">
-              <div class="text" style="color: black;">Foto da parte externa da nossa Área Kids</div>
-          </div>
-  
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
-      </div>
-  </div>
-  
-  
-  <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-      <span class="dot" onclick="currentSlide(4)"></span> 
-  </div>
-  
-  
-      <script>
-          let slideIndex = 1;
-          showSlides(slideIndex);
-  
-          function plusSlides(n) {
-              showSlides(slideIndex += n);
-          }
-  
-          function currentSlide(n) {
-              showSlides(slideIndex = n);
-          }
-  
-          function showSlides(n) {
-              let i;
-              let slides = document.getElementsByClassName("mySlides");
-              let dots = document.getElementsByClassName("dot");
-              if (n > slides.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";  
-              }
-              for (i = 0; i < dots.length; i++) {
-                  dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-          }
-      </script>
-  
-      <!-- Criação da área de Hospedagem Pet -->
-      <div class="pettituloisa">
-          <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-align: justify;">
-              E para você que tem um animalzinho de estimação, também possuímos uma área pensada em você!
-          </h3>
-      </div>
-  
-      <div class="petisa">
-          <div class="titulopetisa">
-              <h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-align: center;">
-                  Área de Hospedagem Pet
-              </h4>
-          </div>
-          <div class="petparagrafosisa">
-              <p style="text-align: center;">A área de Hospedagem Pet do hotel é um espaço dedicado ao conforto e bem-estar dos animais de estimação.</p>
-              <p style="text-align: center;">Com acomodações seguras e aconchegantes, os pets têm à disposição camas confortáveis, brinquedos e ambiente climatizado. Os cuidados incluem alimentação balanceada, passeios diários e supervisão constante por profissionais treinados.</p>
-              <p style="text-align: center;">O hotel oferece ainda serviços personalizados, como banho e tosa, garantindo uma estadia relaxante e divertida para os animais, enquanto seus donos aproveitam suas viagens com tranquilidade.</p> 
-          </div>
-      </div>
-  </div>
-  
+        <div class="slideshow-containerisa">
+    
+            <div class="mySlides fadeisa">
+                <div class="numbertext">1 / 4</div>
+                <img src="../imagens/37.jpg" style="width: 100%">
+                <div class="text" style="color: black;">Foto Demonstrativa do interior da nossa Área Kids</div>
+            </div>
+    
+            <div class="mySlides fadeisa">
+                <div class="numbertext">2 / 4</div>
+                <img src="../imagens/38.jpg" style="width: 100%">
+                <div class="text" style="color: black;">Foto da visão geral dos brinquedos que a Área possui</div>
+            </div>
+    
+            <div class="mySlides fadeisa">
+                <div class="numbertext">3 / 4</div>
+                <img src="../imagens/36.jpg" style="width: 100%">
+                <div class="text" style="color: black;">Foto destacada dos brinquedos da Área</div>
+            </div>
+    
+            <div class="mySlides fadeisa">
+                <div class="numbertext">4 / 4</div>
+                <img src="../imagens/wp-1618880391322-1024x683.jpg" style="width: 100%;">
+                <div class="text" style="color: black;">Foto da parte externa da nossa Área Kids</div>
+            </div>
+    
+             <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+    </div>
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+    </div>
+    
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+    
+    <!-- Criação da área de Hospedagem Pet -->
+    <div class="pettituloisa">
+        <h3>
+            E para você que tem um animalzinho de estimação, também possuímos uma área pensada em você!
+        </h3>
+    </div>
+    
+    <div class="petisa">
+        <div class="titulopetisa">
+            <h2>
+              🐶🐱Área de Hospedagem Pet🐶🐱
+            </h2>
+        </div>
+        <div class="petparagrafosisa">
+            <p >A área de Hospedagem Pet do hotel é um espaço dedicado ao conforto e bem-estar dos animais de estimação.</p>
+            <p>Com acomodações seguras e aconchegantes, os pets têm à disposição camas confortáveis, brinquedos e ambiente climatizado. Os cuidados incluem alimentação balanceada, passeios diários e supervisão constante por profissionais treinados.</p>
+            <p>O hotel oferece ainda serviços personalizados, como banho e tosa, garantindo uma estadia relaxante e divertida para os animais, enquanto seus donos aproveitam suas viagens com tranquilidade.</p> 
+        </div>
+    </div>
+    
     <!-- Legenda confira algumas fotos -->
-
     <div class="galeriapetisa">
-    <h5>Confira abaixo a galeria de fotos da nossa Área de Hospedagem Pet.</h5>
+        <h5>Confira abaixo a galeria de fotos da nossa Área de Hospedagem Pet.</h5>
+    </div>
+    
+    <!-- Criação do segundo slideshow -->
+    <!-- As 04 colunas -->
+    <div class="rowisas">
+        <div class="columnisas">
+            <img src="../imagens/pets1.jpg" alt="Foto dos pets dos nossos clientes se divertindo" style="width:100%" onclick="myFunction(this);">
         </div>
-
-
-    <!--Criação do segundo slideshow, dessa vez o da Área de Hospedagem Pet-->
-
+        <div class="columnisas">
+            <img src="../imagens/pets2.jpg" alt="Foto da nossa Área Externa Pet" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="columnisas">
+            <img src="../imagens/pets3.jpg" alt="Fotos dos pets juntamente com a tutora" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="columnisas">
+            <img src="../imagens/pets4.jpg" alt="Foto ampliada dos pets na Área Externa" style="width:100%" onclick="myFunction(this);">
+        </div>
+    </div>
       
-      <!-- As 04 colunas -->
-      <div class="rowisas">
-        <div class="columnisas">
-          <img src="../imagens/pets1.jpg" alt="Foto dos pets dos nossos clientes se divertindo" style="width:100%" onclick="myFunction(this);">
-        </div>
-        <div class="columnisas">
-          <img src="../imagens/pets2.jpg" alt="Foto da nossa Área Externa Pet" style="width:100%" onclick="myFunction(this);">
-        </div>
-        <div class="columnisas">
-          <img src="../imagens/pets3.jpg" alt="Fotos dos pets juntamente com a tutora" style="width:100%" onclick="myFunction(this);">
-        </div>
-        <div class="columnisas">
-          <img src="../imagens/pets4.jpg" alt="Foto ampliada dos pets na Área Externa" style="width:100%" onclick="myFunction(this);">
-        </div>
-      </div>
-      
-      <div class="containerisas">
+    <div class="containerisas">
         <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
         <img id="expandedImg" style="width:100%">
         <div id="imgtext"></div>
-      </div>
+    </div>
       
-      <script>
-      function myFunction(imgs) {
+    <script>
+    function myFunction(imgs) {
         var expandImg = document.getElementById("expandedImg");
         var imgText = document.getElementById("imgtext");
         expandImg.src = imgs.src;
         imgText.innerHTML = imgs.alt;
         expandImg.parentElement.style.display = "block";
-      }
-      </script>
-
-
-
-
+    }
+    </script>
+    
     <!--Rodapé-->
-
-
     <footer id="footer">
-      <div class="icons-container">
-          <div class="icon">
-              <img src="../imagens/ICONE_FACEBOOK.png" width="40px" height="40px" alt="Facebook">
-              <span>Facebook</span>
-          </div>
-          <div class="icon">
-              <img src="../imagens/ICONE_GIITHUB.png" width="40px" height="40px" alt="GitHub">
-              <span>Twitter/X</span>
-          </div>
-          <div class="icon">
-              <img src="../imagens/ICONE_GOOGLE.png" width="40px" height="40px" alt="Google">
-              <span>Google</span>
-          </div>
-          <div class="icon">
-              <img src="../imagens/icone_instagram.png" width="40px" height="40px" alt="Instagram">
-              <span>Instagram</span>
-          </div>
-          </div>
-      </div>
-      <div class="footer-text">
-          <p style="color: white; text-align: center; margin-top: 10px;">© 2024 Vista Serena Hotel. Todos os direitos reservados.</p>
-      </div>
-  </footer>
-
-
-
-
-</body>
-</html>
+        <div class="icons-container">
+            <div class="icon">
+                <img src="../imagens/ICONE_FACEBOOK.png" width="40px" height="40px" alt="Facebook">
+                <span>Facebook</span>
+            </div>
+            <div class="icon">
+                <img src="../imagens/ICONE_GIITHUB.png" width="40px" height="40px" alt="GitHub">
+                <span>Twitter/X</span>
+            </div>
+            <div class="icon">
+                <img src="../imagens/ICONE_GOOGLE.png" width="40px" height="40px" alt="Google">
+                <span>Google</span>
+            </div>
+            <div class="icon">
+                <img src="../imagens/icone_instagram.png" width="40px" height="40px" alt="Instagram">
+                <span>Instagram</span>
+            </div>
+        </div>
+        <div class="footer-text">
+            <p style="color: white; text-align: center; margin-top: 10px;">© 2024 Vista Serena Hotel. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    </body>
+    </html>
